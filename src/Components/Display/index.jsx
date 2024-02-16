@@ -1,11 +1,10 @@
 import React from "react";
 import './Display.css'
 
-function Display(){
+function Display({ value }){
     return(
 
-        <textarea rows="4" cols="50">
-            Enter the numbers
+        <textarea rows="4" cols="50" value={value}>
         </textarea>
 
     );
