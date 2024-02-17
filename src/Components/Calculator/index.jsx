@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Calculator.css';
 import { Display } from '../Display';
 import { Numbers } from '../Numbers';
+import { Operators } from '../Operators';
 
 function Calculator(){
 
@@ -18,8 +19,14 @@ function Calculator(){
             <div className="container-calculator">
 
                 <Display value={displayValue} />
-                
-                <Numbers onClickNumber={handleClickNumber} />
+
+                <div className="container-calculator--buttons">
+
+                    <Numbers onClickNumber={handleClickNumber} />
+
+                    <Operators onClickOperator={handleClickNumber} />
+
+                </div>
                 
             </div>
 
