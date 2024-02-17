@@ -14,6 +14,12 @@ function Calculator(){
     };
 
     const handleClickResult = (operator) => {
+
+        if (operator === "delete") {
+            let nuevaCadena = displayValue.slice(0, -1);
+            setDisplayValue(nuevaCadena);
+            console.log(nuevaCadena);
+        }
         
         if(operator === "="){
 
